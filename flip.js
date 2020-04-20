@@ -4,7 +4,7 @@ let isFlipped = false
 let first, second;
 let lock = false;
 let matches = 0;
-let counter=0;
+
 
 (function shuffle(){
     cards.forEach(card => {
@@ -44,7 +44,6 @@ function isMAtch(){
             first.removeEventListener('click', flipCard);
             second.removeEventListener('click', flipCard);
             matches++;
-            counter=0;
             getBio(first.dataset.name);
             if(matches === 6){
                 setTimeout(function(){  gameOverScreen();
