@@ -13,23 +13,7 @@ body{
 
 .timer{
     position: absolute;
-    left: 50%;
-    font-size: 150%;
-    color: white;
-    font-family: system-ui;
-}
-
-.rem{
-    position: absolute;
-    left: 31%;
-    font-size: 150%;
-    color: white;
-    font-family: system-ui;
-}
-
-.rem2{
-    position: absolute;
-    left: 58%;
+    left: 20%;
     font-size: 150%;
     color: white;
     font-family: system-ui;
@@ -37,7 +21,7 @@ body{
 
 .counter{
     position: absolute;
-    left: 64%;
+    left: 70%;
     font-size: 150%;
     color: white;
     font-family: system-ui;
