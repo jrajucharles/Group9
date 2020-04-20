@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    background: #3E3B40;
+}
+
+.timer{
+    position: absolute;
+    left: 50%;
+    font-size: 150%;
+    color: white;
+    font-family: system-ui;
+}
+
+.rem{
+    position: absolute;
+    left: 31%;
+    font-size: 150%;
+    color: white;
+    font-family: system-ui;
+}
+
+.rem2{
+    position: absolute;
+    left: 58%;
+    font-size: 150%;
+    color: white;
+    font-family: system-ui;
+}
+
+.counter{
+    position: absolute;
+    left: 64%;
+    font-size: 150%;
+    color: white;
+    font-family: system-ui;
+}
+
+.memgame{
+    width: 95%;
+    height: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.card{
+    width: calc(15% - 1px);
+    height: calc(30% - 1px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card: active{
+    transform: scale(.95);
+    transition: transform .3s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+.frontside, .backside{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    background: #F6FB67;
+    backface-visibility: hidden;
+}
+
+.frontside{
+    transform: rotateY(180deg);
+}
+
+.bio{
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    display: none;
+    position: fixed;
+    
+}
+
+.overlay{
+    display: none;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9); 
+    z-index: 2; 
+}
+
+#game-over h1{
+    color: white;
+    font-size: 500%;
+    font-family: system-ui;
+}
+
+#winner h1{
+    color: white;
+    font-size: 500%;
+    font-family: system-ui;
+}
+
+
+a{
+    font-size: 200%;
+    font-family: system-ui;
+}
+
+a:link { text-decoration: none; color:white; } 
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:white;}
