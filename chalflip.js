@@ -17,7 +17,7 @@ setInterval( function(){
     counter--;
     if(counter >=0){
         id = document.getElementById('count');
-        id.innerHTML = counter;
+        id.innerHTML = 'Time Remaining: ' + counter;
     }
             
     if(counter ===0){
@@ -31,7 +31,7 @@ var flips = 0;
 function setFlips(){
     flips++;
     id2 = document.getElementById('flipper');
-    id2.innerHTML = flips;
+    id2.innerHTML = 'Flips: ' + flips;
 }
 
 function flipCard(){
