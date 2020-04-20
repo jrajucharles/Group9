@@ -99,12 +99,35 @@ body{
     font-family: system-ui;
 }
 
+#game-over h3{
+    color: white;
+    font-size: 350%;
+    font-family: system-ui;
+}
+
+#game-over2 h1{
+    color: white;
+    font-size: 500%;
+    font-family: system-ui;
+}
+
+#game-over2 h3{
+    color: white;
+    font-size: 350%;
+    font-family: system-ui;
+}
+
 #winner h1{
     color: white;
     font-size: 500%;
     font-family: system-ui;
 }
 
+#winner h3{
+    color: white;
+    font-size: 350%;
+    font-family: system-ui;
+}
 
 a{
     font-size: 200%;
