@@ -4,6 +4,7 @@ let isFlipped = false
 let first, second;
 let lock = false;
 let matches = 0;
+let failedMatches = 0;
 
 (function shuffle(){
     cards.forEach(card => {
@@ -63,11 +64,14 @@ function isMAtch(){
             first.removeEventListener('click', flipCard);
             second.removeEventListener('click', flipCard);
             matches++;
+            failedMatches = 0;
             if(matches === 9){
                 gameWinScreen();
             }
         }else{
             lock = true;
+            failedMatches++;
+            checkFail();
             setTimeout(() =>{
                 first.classList.remove('flip');
                 second.classList.remove('flip');
@@ -83,6 +87,11 @@ function disableCards(){
     second = null;
 }
 
+function checkFail(){
+    if(failedMatches == 8){
+        document.getElementById("game-over2").style.display = "block";
+    }
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
