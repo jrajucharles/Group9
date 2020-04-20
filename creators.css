@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background:#4EC7F2;
+}
+
+.memgame{
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.card{
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card: active{
+    transform: scale(.95);
+    transition: transform .3s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+.frontside, .backside{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    background: #F6FB67;
+    backface-visibility: hidden;
+}
+
+.frontside{
+    transform: rotateY(180deg);
+}
+
+.bio{
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    display: none;
+    position: fixed;
+    
+}
+
+.overlay{
+    display: none;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9); 
+    z-index: 2; 
+}
+
+#game-over h1{
+    color: white;
+    font-size: 300%;
+    font-family: system-ui;
+}
+
+a{
+    font-size: 200%;
+    font-family: system-ui;
+}
+
+a:link { text-decoration: none; color:white; } 
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:white;}
+
+.modal6 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+#close{
+    right:5;
+    top:5;
+    float:right;
+}
+
+.modal-content6 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
+.modal7 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+.modal-content7 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
+
+.modal8 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+.modal-content8 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
+
+.modal9 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+.modal-content9 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
+
+.modal10 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+.modal-content10 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
+
+.modal11 {
+    display:none;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10000;
+}
+
+.modal-content11 {
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    color:#4EC7F2;
+    font-family:cursive;
+    top:5%;
+    bottom:5%;
+    right:5%;
+    width:45%;
+}
